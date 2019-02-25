@@ -1,6 +1,6 @@
 Name     : xorg-fonts
 Version  : 1
-Release  : 1
+Release  : 2
 URL      : https://www.x.org/releases/individual/font
 Source0  : https://www.x.org/releases/individual/font/encodings-1.0.4.tar.bz2
 Source1  : https://www.x.org/releases/individual/font/font-adobe-100dpi-1.0.3.tar.bz2
@@ -13,7 +13,7 @@ Source7  : https://www.x.org/releases/individual/font/font-bh-100dpi-1.0.3.tar.b
 Source8  : https://www.x.org/releases/individual/font/font-bh-75dpi-1.0.3.tar.bz2
 Source9  : https://www.x.org/releases/individual/font/font-bh-lucidatypewriter-100dpi-1.0.3.tar.bz2
 Source10  : https://www.x.org/releases/individual/font/font-bh-lucidatypewriter-75dpi-1.0.3.tar.bz2
-Source11  : https://www.x.org/releases/individual/font/font-bh-ttf-1.0.3.tar.bz2
+#Source11  : https://www.x.org/releases/individual/font/font-bh-ttf-1.0.3.tar.bz2
 Source12  : https://www.x.org/releases/individual/font/font-bh-type1-1.0.3.tar.bz2
 Source13  : https://www.x.org/releases/individual/font/font-bitstream-100dpi-1.0.3.tar.bz2
 Source14  : https://www.x.org/releases/individual/font/font-bitstream-75dpi-1.0.3.tar.bz2
@@ -80,7 +80,7 @@ license components for the xorg-fonts package.
 %setup -q -n font-bh-75dpi-1.0.3 -b 8
 %setup -q -n font-bh-lucidatypewriter-100dpi-1.0.3 -b 9
 %setup -q -n font-bh-lucidatypewriter-75dpi-1.0.3 -b 10
-%setup -q -n font-bh-ttf-1.0.3 -b 11
+#%setup -q -n font-bh-ttf-1.0.3 -b 11
 %setup -q -n font-bh-type1-1.0.3 -b 12
 %setup -q -n font-bitstream-100dpi-1.0.3 -b 13
 %setup -q -n font-bitstream-75dpi-1.0.3 -b 14
@@ -129,8 +129,8 @@ cd ../font-bh-lucidatypewriter-100dpi-1.0.3
 %configure
 cd ../font-bh-lucidatypewriter-75dpi-1.0.3
 %configure
-cd ../font-bh-ttf-1.0.3
-%configure
+#cd ../font-bh-ttf-1.0.3
+#%configure
 cd ../font-bh-type1-1.0.3
 %configure
 cd ../font-bitstream-100dpi-1.0.3
@@ -216,9 +216,9 @@ cp COPYING %{buildroot}/usr/share/package-licenses/xorg-fonts/font-bh-lucidatype
 cd ../font-bh-lucidatypewriter-75dpi-1.0.3
 cp COPYING %{buildroot}/usr/share/package-licenses/xorg-fonts/font-bh-lucidatypewriter-75dpi_COPYING
 %make_install
-cd ../font-bh-ttf-1.0.3
-cp COPYING %{buildroot}/usr/share/package-licenses/xorg-fonts/font-bh-ttf_COPYING
-%make_install
+#cd ../font-bh-ttf-1.0.3
+#cp COPYING %{buildroot}/usr/share/package-licenses/xorg-fonts/font-bh-ttf_COPYING
+#%make_install
 cd ../font-bh-type1-1.0.3
 cp COPYING %{buildroot}/usr/share/package-licenses/xorg-fonts/font-bh-type1_COPYING
 %make_install
