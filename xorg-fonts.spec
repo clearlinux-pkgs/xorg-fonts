@@ -1,6 +1,6 @@
 Name     : xorg-fonts
 Version  : 1
-Release  : 3
+Release  : 4
 URL      : https://www.x.org/releases/individual/font
 Source0  : https://www.x.org/releases/individual/font/encodings-1.0.4.tar.bz2
 Source1  : https://www.x.org/releases/individual/font/font-adobe-100dpi-1.0.3.tar.bz2
