@@ -13,7 +13,6 @@ Source7  : https://www.x.org/releases/individual/font/font-bh-100dpi-1.0.3.tar.b
 Source8  : https://www.x.org/releases/individual/font/font-bh-75dpi-1.0.3.tar.bz2
 Source9  : https://www.x.org/releases/individual/font/font-bh-lucidatypewriter-100dpi-1.0.3.tar.bz2
 Source10  : https://www.x.org/releases/individual/font/font-bh-lucidatypewriter-75dpi-1.0.3.tar.bz2
-#Source11  : https://www.x.org/releases/individual/font/font-bh-ttf-1.0.3.tar.bz2
 Source12  : https://www.x.org/releases/individual/font/font-bh-type1-1.0.3.tar.bz2
 Source13  : https://www.x.org/releases/individual/font/font-bitstream-100dpi-1.0.3.tar.bz2
 Source14  : https://www.x.org/releases/individual/font/font-bitstream-75dpi-1.0.3.tar.bz2
@@ -28,7 +27,6 @@ Source22  : https://www.x.org/releases/individual/font/font-isas-misc-1.0.3.tar.
 Source23  : https://www.x.org/releases/individual/font/font-jis-misc-1.0.3.tar.bz2
 Source24  : https://www.x.org/releases/individual/font/font-micro-misc-1.0.3.tar.bz2
 Source25  : https://www.x.org/releases/individual/font/font-misc-cyrillic-1.0.3.tar.bz2
-#Source26  : https://www.x.org/releases/individual/font/font-misc-ethiopic-1.0.3.tar.bz2
 Source27  : https://www.x.org/releases/individual/font/font-misc-meltho-1.0.3.tar.bz2
 Source28  : https://www.x.org/releases/individual/font/font-misc-misc-1.1.2.tar.bz2
 Source29  : https://www.x.org/releases/individual/font/font-mutt-misc-1.0.3.tar.bz2
@@ -80,7 +78,6 @@ license components for the xorg-fonts package.
 %setup -q -n font-bh-75dpi-1.0.3 -b 8
 %setup -q -n font-bh-lucidatypewriter-100dpi-1.0.3 -b 9
 %setup -q -n font-bh-lucidatypewriter-75dpi-1.0.3 -b 10
-#%setup -q -n font-bh-ttf-1.0.3 -b 11
 %setup -q -n font-bh-type1-1.0.3 -b 12
 %setup -q -n font-bitstream-100dpi-1.0.3 -b 13
 %setup -q -n font-bitstream-75dpi-1.0.3 -b 14
@@ -95,7 +92,6 @@ license components for the xorg-fonts package.
 %setup -q -n font-jis-misc-1.0.3 -b 23
 %setup -q -n font-micro-misc-1.0.3 -b 24
 %setup -q -n font-misc-cyrillic-1.0.3 -b 25
-#%setup -q -n font-misc-ethiopic-1.0.3 -b 26
 %setup -q -n font-misc-meltho-1.0.3 -b 27
 %setup -q -n font-misc-misc-1.1.2 -b 28
 %setup -q -n font-mutt-misc-1.0.3 -b 29
@@ -129,8 +125,6 @@ cd ../font-bh-lucidatypewriter-100dpi-1.0.3
 %configure
 cd ../font-bh-lucidatypewriter-75dpi-1.0.3
 %configure
-#cd ../font-bh-ttf-1.0.3
-#%configure
 cd ../font-bh-type1-1.0.3
 %configure
 cd ../font-bitstream-100dpi-1.0.3
@@ -159,8 +153,6 @@ cd ../font-micro-misc-1.0.3
 %configure
 cd ../font-misc-cyrillic-1.0.3
 %configure
-#cd ../font-misc-ethiopic-1.0.3
-#%configure
 cd ../font-misc-meltho-1.0.3
 %configure
 cd ../font-misc-misc-1.1.2
@@ -216,9 +208,6 @@ cp COPYING %{buildroot}/usr/share/package-licenses/xorg-fonts/font-bh-lucidatype
 cd ../font-bh-lucidatypewriter-75dpi-1.0.3
 cp COPYING %{buildroot}/usr/share/package-licenses/xorg-fonts/font-bh-lucidatypewriter-75dpi_COPYING
 %make_install
-#cd ../font-bh-ttf-1.0.3
-#cp COPYING %{buildroot}/usr/share/package-licenses/xorg-fonts/font-bh-ttf_COPYING
-#%make_install
 cd ../font-bh-type1-1.0.3
 cp COPYING %{buildroot}/usr/share/package-licenses/xorg-fonts/font-bh-type1_COPYING
 %make_install
@@ -261,9 +250,6 @@ cp COPYING %{buildroot}/usr/share/package-licenses/xorg-fonts/font-micro-misc_CO
 cd ../font-misc-cyrillic-1.0.3
 cp COPYING %{buildroot}/usr/share/package-licenses/xorg-fonts/font-misc-cyrillic_COPYING
 %make_install
-#cd ../font-misc-ethiopic-1.0.3
-#cp COPYING %{buildroot}/usr/share/package-licenses/xorg-fonts/font-misc-ethiopic_COPYING
-#%make_install
 cd ../font-misc-meltho-1.0.3
 cp COPYING %{buildroot}/usr/share/package-licenses/xorg-fonts/font-misc-meltho_COPYING
 %make_install
