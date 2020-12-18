@@ -1,8 +1,8 @@
 Name     : xorg-fonts
 Version  : 1
-Release  : 4
+Release  : 5
 URL      : https://www.x.org/releases/individual/font
-Source0  : https://www.x.org/releases/individual/font/encodings-1.0.4.tar.bz2
+Source0  : https://www.x.org/releases/individual/font/encodings-1.0.5.tar.bz2
 Source1  : https://www.x.org/releases/individual/font/font-adobe-100dpi-1.0.3.tar.bz2
 Source2  : https://www.x.org/releases/individual/font/font-adobe-75dpi-1.0.3.tar.bz2
 Source3  : https://www.x.org/releases/individual/font/font-adobe-utopia-100dpi-1.0.4.tar.bz2
@@ -67,7 +67,7 @@ license components for the xorg-fonts package.
 
 
 %prep
-%setup -q -n encodings-1.0.4 -b 0
+%setup -q -n encodings-1.0.5 -b 0
 %setup -q -n font-adobe-100dpi-1.0.3 -b 1
 %setup -q -n font-adobe-75dpi-1.0.3 -b 2
 %setup -q -n font-adobe-utopia-100dpi-1.0.4 -b 3
@@ -103,7 +103,7 @@ license components for the xorg-fonts package.
 %setup -q -n font-xfree86-type1-1.0.4 -b 35
 
 %build
-cd ../encodings-1.0.4
+cd ../encodings-1.0.5
 %configure
 cd ../font-adobe-100dpi-1.0.3
 %configure
@@ -175,7 +175,7 @@ cd ../font-xfree86-type1-1.0.4
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/xorg-fonts
-cd ../encodings-1.0.4
+cd ../encodings-1.0.5
 cp COPYING %{buildroot}/usr/share/package-licenses/xorg-fonts/encodings_COPYING
 %make_install
 cd ../font-adobe-100dpi-1.0.3
